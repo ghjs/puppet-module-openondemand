@@ -549,6 +549,14 @@ nginx_stage.yml pun_custom_env
 
 Default value: {}
 
+##### `nginx_stage_pun_custom_env_declarations`
+
+Data type: `Array`
+
+nginx_stage.yml pun_custom_env_declarations
+
+Default value: []
+
 ##### `nginx_stage_app_root`
 
 Data type: `Openondemand::Nginx_stage_namespace_config`

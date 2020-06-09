@@ -127,6 +127,8 @@
 #   nginx_stage.yml ondemand_title
 # @param nginx_stage_pun_custom_env
 #   nginx_stage.yml pun_custom_env
+# @param nginx_stage_pun_custom_env_declarations
+#   nginx_stage.yml pun_custom_env_declarations
 # @param nginx_stage_app_root
 #   nginx_stage.yml app_root
 # @param nginx_stage_scl_env
@@ -245,6 +247,7 @@ class openondemand (
   String $nginx_stage_ondemand_portal = 'ondemand',
   String $nginx_stage_ondemand_title  = 'Open OnDemand',
   Hash $nginx_stage_pun_custom_env = {},
+  Array $nginx_stage_pun_custom_env_declarations = [],
   Openondemand::Nginx_stage_namespace_config $nginx_stage_app_root  = {},
   String $nginx_stage_scl_env = 'ondemand',
   Optional[Openondemand::Nginx_stage_namespace_config] $nginx_stage_app_request_regex = undef,

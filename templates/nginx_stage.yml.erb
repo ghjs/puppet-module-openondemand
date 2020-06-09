@@ -54,6 +54,12 @@ pun_custom_env:
 #  - MANPATH
 #  - SCLS
 #  - X_SCLS
+<%- if ! scope['openondemand::nginx_stage_pun_custom_env_declarations'].empty? -%>
+pun_custom_env_declarations:
+<%- scope['openondemand::nginx_stage_pun_custom_env_declarations'].each do |d| -%>
+  - <%= d %>
+<%- end -%>
+<%- end -%>
 
 # Location of the ERB templates used in the generation of the NGINX configs
 #
